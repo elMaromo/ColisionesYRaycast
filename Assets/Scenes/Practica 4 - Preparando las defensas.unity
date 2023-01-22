@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17442688, g: 0.21814987, b: 0.30038628, a: 1}
+  m_IndirectSpecularColor: {r: 0.17442662, g: 0.21814951, b: 0.30038577, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -307,6 +307,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1043808109436416, guid: 3f3c3958e000d074bbcea79849272fbd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1700957619592052, guid: 3f3c3958e000d074bbcea79849272fbd, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -342,6 +346,10 @@ PrefabInstance:
     - target: {fileID: 4041236280203212, guid: 3f3c3958e000d074bbcea79849272fbd, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23778582495255054, guid: 3f3c3958e000d074bbcea79849272fbd, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -753,6 +761,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeToSpawn: 2
+  numOrcs: 10
   orc: {fileID: 1544811022886476, guid: 3f79691efd2d8e6419b6deedf6bc9025, type: 3}
 --- !u!1 &740659633
 GameObject:
@@ -1979,6 +1988,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeToSpawn: 1.5
+  numOrcs: 10
   orc: {fileID: 1544811022886476, guid: 3f79691efd2d8e6419b6deedf6bc9025, type: 3}
 --- !u!4 &1847669221 stripped
 Transform:

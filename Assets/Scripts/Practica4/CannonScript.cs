@@ -46,7 +46,7 @@ public class CannonScript : MonoBehaviour
     {
         for( int i = 0; i < targets.Count; i++ )
         {
-            if( targets[i] == null )
+            if( !targets[i].activeSelf )
             {
                 targets.RemoveAt(i);
             }

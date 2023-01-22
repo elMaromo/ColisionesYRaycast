@@ -5,7 +5,13 @@ using UnityEngine;
 public class OrcTowerScript : MonoBehaviour
 {
     public float health, speed;
+    private float currentHealth;
 
+    void Start()
+    {
+        currentHealth = health;
+    }
+    
     void Update()
     {
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
@@ -26,11 +32,12 @@ public class OrcTowerScript : MonoBehaviour
 
     public void TakeDamage( float damage )
     {
-        health -= damage;
+        currentHealth -= damage;
 
-        if( health <= 0 )
+        if( currentHealth <= 0 )
         {
-            Destroy(gameObject);
+            currentHealth = health;
+            gameObject.SetActive(false);
         }
     }
 }

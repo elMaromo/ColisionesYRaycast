@@ -16,5 +16,6 @@ public class TowerBaseScript : MonoBehaviour
     void OnMouseDown()
     {
         myCannon.SetActive(true);
+        gameObject.SetActive(false);
     }
 }
